@@ -46,3 +46,18 @@ This is a personal website template, showcasing projects, providing information,
 - ``global.css``: Contains global styles like background colors and text styles.
 - ``main.css``: Main stylesheet with detailed styling for different sections.
 - ``responsive.css``: Styles for different screen sizes to ensure responsiveness.
+
+## JavaScript
+- Included in the index.html file to handle the navigation menu toggle:
+
+```html
+<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+<script>
+    $(".nav-icon").click(function(){
+        $("#nav-links").toggleClass("nav-menu");
+        return false;
+    });
+</script>
+```
+
+
