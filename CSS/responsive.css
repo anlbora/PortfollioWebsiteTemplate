@@ -1,0 +1,64 @@
+/* Max Width 1200px */
+@media (max-width: 1200px){
+    html{
+        font-size: 10px;
+    }
+    .items .item{
+        width: 33%;
+    }
+    footer .container .col{
+        width: 33%;
+    }
+}
+
+/* Max Width 992px */
+@media (max-width: 992px){
+    html{
+        font-size: 9px;
+    }
+    .items .item{
+        width: 45%;
+    }
+    footer .container .col{
+        width: 33%;
+    }
+    #nav-links ul{
+        display: flex;
+        flex-direction: column;
+        text-align: right;
+    }
+    #nav-links .nav-icon{
+        display: inline-block;
+    }
+    #nav-links.nav-menu li:not(:first-child){
+        display: none;
+    }
+
+
+}
+
+/* Max-Width 768px */
+@media (max-width: 768px){
+    html{
+        font-size: 8px;
+    }
+    .items .item{
+        width: 60%;
+    }
+    footer .container .col{
+        width: 100%;
+    }
+}
+
+/* Max-width 546px */
+@media (max-width: 546px){
+    html{
+        font-size: 7px;
+    }
+    .items .item{
+        width: 100%;
+    }
+    footer .container .col{
+        width: 100%;
+    }
+}

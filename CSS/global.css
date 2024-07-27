@@ -1,0 +1,134 @@
+/* Background CSS */
+.bg-dark{
+    background-color: #223C53;
+}
+.bg-light{
+    background-color: #4376a3;
+}
+
+/* Text CSS */
+.text-uppercase{
+    text-transform: uppercase;
+}
+.text-center{
+    text-align: center;
+}
+
+/* Image CSS */
+.img-fluid{
+    max-width: 300px;
+    height: auto;
+    border-radius: 300px;
+    border: 1px solid rgba(7, 20, 104, 0.366);
+}
+.img-fluid-item{
+    max-width: 100%;
+    height: auto;
+    border-radius: 0.5rem;
+}
+
+/* hr and Star CSS */
+hr.star-light{
+    border-color: #FFF;
+}
+hr.star-dark{
+    border-color: #012821;
+}
+
+.star-light, .star-dark{
+    border: none;
+    border-top: 0.4rem solid;
+    border-radius: 0.4rem;
+    width: 25%;
+    margin: 2.5rem auto;
+    height: 0;
+    overflow: visible;
+}
+.star-light::after{
+    background-color: #1ABC9A;
+    color: #FFF;
+}
+.star-dark::after{
+    background-color: #FFF;
+    color: #012821;
+}
+.star-light::after, .star-dark::after{
+    content: "\2605";
+    font-weight: bold;
+    font-size: 3rem;
+    position: relative;
+    top: -2.7rem;
+    padding: 0 1rem;
+}
+
+/* Button CSS */
+.btn{
+    cursor: pointer;
+    font-weight: 500;
+    letter-spacing: 0.2rem;
+}
+.btn-download{
+    padding: 2rem 3rem;
+    margin: 2rem;
+    display: inline-block;
+    background-color: transparent;
+    color: #FFF;
+    border: 2px solid #FFF;
+    border-radius: 0.5rem;
+    transition: all 0.5s;
+}
+.btn-download:hover{
+    color: #222;
+    background-color: #FFF;
+}
+.btn-download:hover i, .btn-submit:hover i{
+    color: #223C53;
+}
+
+.btn-submit{
+    font-size: 2rem;
+    padding: 2rem 3rem;
+    background-color: #1ABC9A;
+    border: none;
+    color: #FFF;
+    border-radius: 0.5rem;
+    transition: all 0.5s;
+}
+.btn-block{
+    display: block;
+    width: 100%;
+}
+.btn-submit:hover{
+    color: #1ABC9A;
+    background-color: #FFF;
+    border: 1px solid #1ABC9A;
+}
+.btn-social{
+    display: inline-block;
+    background-color: transparent;
+    color: #FFF;
+    font-size: 3rem;
+    transition: all 0.5s;
+}
+.btn-social:hover{
+    color: #1ABC9A;
+}
+
+/* Form CSS */
+.form-group{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+    border-bottom: 2px solid #999;
+}
+.form-control{
+    width: 100%;
+    display: block;
+    padding: 2rem 0;
+    border: none;
+    font-size: 2rem;
+    resize: none;
+}
+.form-group input:focus, textarea:focus{
+    outline: 0;
+}
